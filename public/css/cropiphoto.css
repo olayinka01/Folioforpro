@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*picture box ctn*/
+       .ctn2
+	   {
+		   margin:0 auto;
+		   height:300px;
+		   width:200px;
+		}
+		/*picture box action buttons*/
+        .action2
+        {
+            width: 250px;
+			margin:0;
+			margin-top:5px;
+        }
+		.action2 .button2
+		{
+			float:right;
+		}
+		/*picture box image*/
+        .cropped>img
+        {
+            margin-right: 10px;
+        }
+		input[type="file"]
+		{
+			width:120px;
+		}
+.pic-box2
+{
+	box-sizing:content-box !important;
+	border:2px solid #EFEFEF;
+	max-height:150px;
+	padding:5px;
+	max-width:150px;
+	background-color:white;
+	border-radius:5px;
+}
+.pic-box2 img
+{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.imageBox2
+{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+}
+
+.imageBox2 .thumbBox2
+{
+	box-sizing:content-box !important;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+	margin:0 auto;
+	left:0;
+	right:0;
+    border: 25px solid rgba(0,0,0,.3);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox2 .spinner2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	display:none;
+    background: url(../img/icons2/load.gif) rgba(0,0,0,0.7) center no-repeat;
+	background-size: 50px 50px;
+}
+/*css for the loading dialog glass layer*/
+#load-glass2
+{
+	position:fixed;
+	height:100%;
+	width:100%;
+	left:0;
+	bottom:0;
+	right:0;
+	top:0;
+	z-index:5;
+	background-color:rgba(0,0,0,.5);
+}
+/*css for the load dialog aritcle layer*/
+#load-glass2 .load-article2
+{
+	min-height:300px;
+	width:300px;
+	padding:5px;
+	border-radius:5px;
+	background-color:white;
+	display:none;
+	margin:5% auto;
+}
+/*css for the loading dialog close button*/
+#load-glass2 .close-icon2
+{
+	height:30px;
+	width:30px;
+	display:none;
+	background:url(../img/icons2/close_icon.png) center no-repeat;
+	cursor:pointer;
+	float:right;
+}
+#load-glass2 .progress-gif2
+{
+	height:50px;
+	width:150px;
+	padding-bottom:100px;
+	text-align:center;
+	margin:10% auto;
+	font-weight:bold;
+	background:url(../img/icons2/load.gif) center no-repeat;
+	background-size:50px 50px;
+}
+.button2
+{
+	font: bold 16px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	display:block;
+	padding:10px;
+	color:black;
+	cursor:pointer;
+	border:none;
+	border-radius:5px;
+	width:auto;
+	display:inline;
+	text-align:center;
+	color:white;
+	background-color:#00CA33;
+	margin:1px;
+}
+.button2:hover
+{
+	background-color:#00B02D;
+}
+</style>
+
+<!--Image Cropping style ends---->
+

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+.leftmargin {
+	margin-left:300px;
+}
+
+.top_search {
+    
+    float:;
+}
+.bold {
+	font-weight:bold;
+}
+
+.nomarginbottom {
+	margin-bottom:0px;
+}
+
+.shop-item-list figure img {
+	width:266px !important;
+	height:100% !important;
+}
+
+.product-edit {
+    min-height: 500px;
+}
+
+.margintop20 {
+	
+	margin-top:20px;
+}
+
+
