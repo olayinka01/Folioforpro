@@ -45,14 +45,14 @@ return array(
 
 		'local' => array(
 			'driver' => 'local',
-			'root'   => public_path().'public',
+			'root'   => public_path().'/public',
 			
 		),
 		
 		'public' => array(
             'driver' => 'local',
             'root' => public_path().'/public',
-			'url' => env('APP_URL').'/public',
+			//'url' => env('APP_URL').'/public',
             'visibility' => 'public',
         ),
 

@@ -58,10 +58,10 @@ Folioforpro: Profile
                             <div class="contentarea">
                                       
                                 <div class="row">
-                                    <div class="col-sm-12 module_cont module_blog" style=" background-image:url({{URL::asset('ffpimages'.'/'.$professional->pro_id.'/'.'background'.'/'.$professional->background_photo)}}); margin-bottom:50px; height:250px; width:800px;">
+                                    <div class="col-sm-12 module_cont module_blog" style=" background-image:url({{URL::asset('ffpimages'.'/'.$professional->pro_id.'/'.'background'.'/'.$professional->background_photo)}}); margin-bottom:100px; height:250px; width:800px;">
                                         <center>
 										<!--<img src="{{URL::asset('ffpimages'.'/'.$professional->pro_id.'/'.'background'.'/'.$professional->background_photo)}}" class="img img-responsive" style="height:250px; width:800px;"  alt="BACKGROUND IMAGE">-->
-                                        <img  src="{{URL::asset('ffpimages'.'/'.$professional->pro_id.'/'.'profile'.'/'.$professional->photo)}}" class="img img-circle img-responsive" style="height:150px; width:150px; margin-top:100px; border:5px solid;" alt="PHOTO">
+                                        <img  src="{{URL::asset('ffpimages'.'/'.$professional->pro_id.'/'.'profile'.'/'.$professional->photo)}}" class="img img-circle img-responsive" style="height:150px; width:150px; margin-top:150px; border:5px solid;" alt="PHOTO">
                                         </center>
                             	
 

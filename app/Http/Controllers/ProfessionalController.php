@@ -43,7 +43,7 @@ class ProfessionalController extends Controller {
 	public function showHello()
 	{
 		
-		/*$user=new User();
+		$user=new User();
 	   
 	  
 	   $user->admin_username="admin"; 
@@ -51,7 +51,7 @@ class ProfessionalController extends Controller {
 	  
 	   $user->account_type="2";
 	   
-	   $user->save();*/
+	   $user->save();
 		return view('welcome');
 	}
 	public function showRegister()
@@ -183,11 +183,11 @@ class ProfessionalController extends Controller {
 	   $admin_email = "yimicsidris@gmail.com";
 	   $admin = array('admin_email'=>$admin_email);
 		 
-		Mail::send('emails.professionalRegister',array('full_details'=> $full_details), function($message) use ($admin)
+		/*Mail::send('emails.professionalRegister',array('full_details'=> $full_details), function($message) use ($admin)
 		{
 		  $message->to($admin['admin_email'], 'Admin')->to('yimicsidris@gmail.com', 'Admin')->subject('Folioforpro New Professional Registration!');
 				 
-		});
+		});*/
 	  
       Session::flash('msg', 'Registration successful! Please wait for activation via your email, this might take some time. Thanks');
 	  
@@ -356,7 +356,7 @@ class ProfessionalController extends Controller {
 	
 	
 	// requires php5
-	define('UPLOAD_DIR', 'public/ffpimages/'.$proff->pro_id.'/background/');
+	define('UPLOAD_DIR', 'ffpimages/'.$proff->pro_id.'/background/');
 	$back_image1 = str_replace('data:image/png;base64,', '', $back_image1);
 	$back_image1 = str_replace(' ', '+', $back_image1);
 	$data1 = base64_decode($back_image1);
