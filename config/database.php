@@ -1,11 +1,11 @@
 <?php
 
-$DATABASE_URL=parse_url(env("mysql://b3c72262693d13:c248993f@us-cdbr-iron-east-05.cleardb.net/heroku_539c97148f2221b?reconnect=true"));
+/*$DATABASE_URL=parse_url(getenv("mysql://b3c72262693d13:c248993f@us-cdbr-iron-east-05.cleardb.net/heroku_539c97148f2221b?reconnect=true"));
 
 $host = $DATABASE_URL("us-cdbr-iron-east-05.cleardb.net");
 $username = $DATABASE_URL("b3c72262693d13");
 $password = $DATABASE_URL("c248993f");
-$database = substr($DATABASE_URL("heroku_539c97148f2221b"), 1);
+$database = substr($DATABASE_URL("heroku_539c97148f2221b"), 1);*/
 
 return array(
 
@@ -76,14 +76,14 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'port' => env('DB_PORT', '3306'),
-			'host'      => $host,
-			'database'  => $database,
-			'username'  => $username,
-			'password'  => $password,
+			'host'      => env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
+			'database'  => env('DB_DATABASE', 'heroku_539c97148f2221b'),
+			'username'  => env('DB_USERNAME', 'b3c72262693d13'),
+			'password'  => env('DB_PASSWORD', 'c248993f'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
-			'strict'    => true,
+			'strict'    => false,
 			'engine'	=> null,
 		),
 
