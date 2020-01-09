@@ -33,9 +33,8 @@ return array(
 	|
 	*/
 
-	//'default' => 'mysql',
-	
-	'default' => env('DB_CONNECTION', 'mysql'),
+	'default' => 'mysql',
+
 
 	/*
 	|--------------------------------------------------------------------------
