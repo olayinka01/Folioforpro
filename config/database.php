@@ -1,5 +1,12 @@
 <?php
 
+$DATABASE_URL=parse_url('mysql://b3c72262693d13:c248993f@us-cdbr-iron-east-05.cleardb.net/heroku_539c97148f2221b?reconnect=true');
+
+$host = $DATABASE_URL["us-cdbr-iron-east-05.cleardb.net"];
+$username = $DATABASE_URL["b3c72262693d13"];
+$password = $DATABASE_URL["c248993f"];
+$database = substr($DATABASE_URL["heroku_539c97148f2221b"], 1);
+
 return array(
 
 	/*
@@ -26,7 +33,9 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	//'default' => 'mysql',
+	
+	'default' => env('DB_CONNECTION', 'mysql'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +61,7 @@ return array(
 			'prefix'   => '',
 		),
 
-		'mysql' => array(
+		/*'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', 'localhost'),
 			'database'  => env('DB_DATABASE', 'folioforpro52'),
@@ -62,9 +71,22 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 			'strict'    => false,
+		),*/
+		
+		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => $host,
+			'database'  => $database,
+			'username'  => $username,
+			'password'  => $password,
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+			'strict'    => true,
+			'engine'	=> null,
 		),
 
-		'pgsql' => array(
+			'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => env('DB_HOST', 'localhost'),
 			'database' => env('DB_DATABASE', 'forge'),
