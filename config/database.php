@@ -1,6 +1,6 @@
 <?php
 
-$DATABASE_URL=parse_url(getenv("mysql://b3c72262693d13:c248993f@us-cdbr-iron-east-05.cleardb.net/heroku_539c97148f2221b?reconnect=true"));
+$DATABASE_URL=parse_url(env("mysql://b3c72262693d13:c248993f@us-cdbr-iron-east-05.cleardb.net/heroku_539c97148f2221b?reconnect=true"));
 
 $host = $DATABASE_URL["us-cdbr-iron-east-05.cleardb.net"];
 $username = $DATABASE_URL["b3c72262693d13"];
@@ -82,7 +82,7 @@ return array(
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
-			'strict'    => true,
+			'strict'    => false,
 			'engine'	=> null,
 		),
 
