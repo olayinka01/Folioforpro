@@ -35,49 +35,118 @@ Folioforpro: Home
                                                         <ul class="sub-menu">
                                                             
                                                             @foreach($menutype2 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype3 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype4 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype5 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
+                                                           <?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype3 as $menutype)
+                                                        	<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype4 as $menutype)
+														   <?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href="{{URL::to($menuLink)}}">{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype5 as $menutype)
+                                                       <?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
                                                         </ul>
                                                     </div>
                                                     <div class="col-sm-3">
                                                         <ul class="sub-menu">
                                                             @foreach($menutype6 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype7 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype8 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype9 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
+                                                       		<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype7 as $menutype)
+                                                        	<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype8 as $menutype)
+                                                      	   <?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype9 as $menutype)
+                                                        	<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
                                                         </ul>
                                                     </div>
                                                     <div class="col-sm-3">
                                                         <ul class="sub-menu">
                                                             @foreach($menutype10 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype11 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype12 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
-                                                            @foreach($menutype13 as $menutype)
-                                                            <li><a href="#">{{$menutype->profession_name}}</a></li>
-                                                            @endforeach
+                                                        	<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype11 as $menutype)
+                                                        	<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype12 as $menutype)
+                                                        	<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
+                                                        
+                                                        @foreach($menutype13 as $menutype)
+                                                       		<?php 
+                                                           $menutypelower = strtolower($menutype->profession_name);
+                                                           $finalmenu = $menutypelower;
+                                                           $menuLink = 'professionals/'.$finalmenu.'/';
+                                                           ?>
+                                                        <li><a href='{{URL::to($menuLink)}}'>{{$menutype->profession_name}}</a></li>
+                                                        @endforeach
                                                         </ul>
                                                     </div>
                                                 </div>
