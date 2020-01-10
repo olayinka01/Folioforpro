@@ -481,78 +481,7 @@ Folioforpro: Home
 	<script type="text/javascript" src="{{URL::asset('js/theme.js')}}"></script>
    
     
-    <!-- Slick Slider -->
-    <script type="text/javascript" src="URL::asset('js/slick.min.js')}}"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            "";
-            jQuery('.fullwidth_slider').show().revolution({
-                sliderType:"standard",
-                jsFileLocation:"revolution/js/",
-                sliderLayout:"fullwidth",
-                delay:9000,
-                gridwidth:1170,
-                gridheight:650,
-                navigation: {
-                    keyboardNavigation: "on",
-                    keyboard_direction: "horizontal",
-                    mouseScrollNavigation: "off",
-
-                    onHoverStop: "on",
-                    touch: {
-                        touchenabled: "on",
-                        swipe_threshold: 75,
-                        swipe_min_touches: 1,
-                        swipe_direction: "horizontal",
-                        drag_block_vertical: false
-                    },
-                    arrows: {
-                        style: "custom_gt3",
-                        enable: false,
-                        hide_onmobile: true,
-                        hide_onleave: true,
-                        left: {
-                            h_align: "left",
-                            v_align: "center",
-                            h_offset: 50,
-                            v_offset: 0
-                        },
-                        right: {
-                            h_align: "right",
-                            v_align: "center",
-                            h_offset: 50,
-                            v_offset: 0
-                        }
-                    },
-                    bullets: {
-                        style: "custom_gt3",
-                        enable: false,
-                        hide_onmobile: false,
-                        hide_onleave: true,
-                        direction: "horizontal",
-                        h_align: "center",
-                        v_align: "bottom",
-                        h_offset: 0,
-                        v_offset: 30,
-                        space: 10,
-                        tmp:''
-                    }
-                },
-                fullScreenOffsetContainer: ""
-            });
-
-            jQuery(".carouselslider").slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                speed: 500,
-                arrows: false,
-                dots: true
-            });
-        });
-    </script>
+   
         
    
 
