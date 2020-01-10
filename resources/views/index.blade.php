@@ -474,6 +474,28 @@ Folioforpro: Home
     
     <div class="fixed-menu"></div>
     
+    <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>	
+	<script type="text/javascript" src="{{URL::asset('js/jquery-ui.min.js')}}"></script>    
+    <script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('js/modules.js')}}"></script>
+	<script type="text/javascript" src="{{URL::asset('js/theme.js')}}"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="{{URL::asset('revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+
+    <!-- SLIDER REVOLUTION EXTENSIONS (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::asset('revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script type="text/javascript" src="URL::asset('revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+    <!-- END SLIDER REVOLUTION EXTENSIONS -->
+
+    
     <!-- Slick Slider -->
     <script type="text/javascript" src="URL::asset('js/slick.min.js')}}"></script>
     <script type="text/javascript">
