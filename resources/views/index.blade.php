@@ -476,9 +476,6 @@ Folioforpro: Home
     
     <script type="text/javascript" src="{{URL::asset('js/jquery.min.js')}}"></script>	
 	<script type="text/javascript" src="{{URL::asset('js/jquery-ui.min.js')}}"></script>    
-    <script type="text/javascript" src="{{URL::asset('js/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{URL::asset('js/modules.js')}}"></script>
-	<script type="text/javascript" src="{{URL::asset('js/theme.js')}}"></script>
    
     
    
