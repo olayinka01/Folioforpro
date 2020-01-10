@@ -61,7 +61,7 @@ return array(
 			'prefix'   => '',
 		),
 
-		'mysql' => array(
+		/*'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', 'localhost'),
 			'database'  => env('DB_DATABASE', 'folioforpro52'),
@@ -71,9 +71,9 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 			'strict'    => false,
-		),
+		),*/
 		
-		/*'mysql' => array(
+		'mysql' => array(
 			'driver'    => 'mysql',
 			'port' => env('DB_PORT', '3306'),
 			'host'      => env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
@@ -85,7 +85,7 @@ return array(
 			'prefix'    => '',
 			'strict'    => false,
 			'engine'	=> null,
-		),*/
+		),
 
 			'pgsql' => array(
 			'driver'   => 'pgsql',
