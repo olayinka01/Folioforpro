@@ -207,11 +207,11 @@ class AdminController extends Controller {
 		  $professional_email = $professional_details->email;
 	      $professional = array('professional_email'=>$professional_email);
 		 
-		Mail::send('emails.activate_professional',array('professional_details'=>$professional_details), function($message) use ($professional)
+		/*Mail::send('emails.activate_professional',array('professional_details'=>$professional_details), function($message) use ($professional)
 		{
 		  $message->to($professional['professional_email'], 'Professional')
 				  ->subject('Folioforpro Activation!');
-		});
+		});*/
 	   
 	   Session::flash('active_msg','Professional successfully activated!');
 	  return redirect('admin/view_professionals');
