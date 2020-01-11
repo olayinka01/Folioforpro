@@ -15,10 +15,10 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		//
 		
-		/*if (env('APP_ENV') === 'production') {
+		
 		\URL::forceScheme('https');
 		
-		}*/
+		
 		
 	}
 
@@ -38,10 +38,10 @@ class AppServiceProvider extends ServiceProvider {
 			'App\Services\Registrar'
 		);
 		
-		if (env('APP_ENV') === 'production') {
+		/*if (env('APP_ENV') === 'production') {
 		$this->app['request']->server->set('HTTPS', true);
 		
-		}
+		}*/
 
 	}
 
