@@ -75,7 +75,7 @@ return array(
 		
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'port' => env('DB_PORT', '3306'),
+			'port'		=> env('DB_PORT', '3306'),
 			'host'      => env('DB_HOST', 'us-cdbr-iron-east-05.cleardb.net'),
 			'database'  => env('DB_DATABASE', 'heroku_539c97148f2221b'),
 			'username'  => env('DB_USERNAME', 'b3c72262693d13'),
@@ -85,9 +85,9 @@ return array(
 			'prefix'    => '',
 			'sslmode' => env('DB_SSLMODE', 'prefer'),
 			'options'   => array(
-            PDO::MYSQL_ATTR_SSL_CA      => storage_path().'/cert/heroku_539c97148f2221b-ca.pem',
-            PDO::MYSQL_ATTR_SSL_CERT    => storage_path().'/cert/b3c72262693d13-cert.pem',
-            PDO::MYSQL_ATTR_SSL_KEY     => storage_path().'/cert/b3c72262693d13-key.pem'
+            PDO::MYSQL_ATTR_SSL_CA      => storage_path().'/app/cert/cleardb-ca.pem',
+            PDO::MYSQL_ATTR_SSL_CERT    => storage_path().'/app/cert/b3c72262693d13-cert.pem',
+            PDO::MYSQL_ATTR_SSL_KEY     => storage_path().'/app/cert/b3c72262693d13-key.pem'
         ),
 			'strict'    => false,
 			'engine'	=> null,
