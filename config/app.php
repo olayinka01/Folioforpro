@@ -163,6 +163,7 @@ return array(
 		//'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'Fideloper\Proxy\TrustedProxyServiceProvider',
 
 	),
 

@@ -83,6 +83,12 @@ return array(
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+			'sslmode' => env('DB_SSLMODE', 'prefer'),
+			'options'   => array(
+            PDO::MYSQL_ATTR_SSL_CA      => storage_path().'/cert/cleardb-ca.pem',
+            PDO::MYSQL_ATTR_SSL_CERT    => storage_path().'/cert/b3c72262693d13-cert.pem',
+            PDO::MYSQL_ATTR_SSL_KEY     => storage_path().'/cert/b3c72262693d13-key.pem'
+        ),
 			'strict'    => false,
 			'engine'	=> null,
 		),
