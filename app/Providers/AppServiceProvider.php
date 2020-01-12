@@ -39,10 +39,7 @@ class AppServiceProvider extends ServiceProvider {
 			'App\Services\Registrar'
 		);
 		
-		/*if (env('APP_ENV') === 'production') {
-		$this->app['request']->server->set('HTTPS', true);
 		
-		}*/
 
 	}
 
