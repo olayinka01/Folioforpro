@@ -85,9 +85,9 @@ return array(
 			'prefix'    => '',
 			'sslmode' => env('DB_SSLMODE', 'prefer'),
 			'options'   => array(
-            PDO::MYSQL_ATTR_SSL_CA      => '/cert/cleardb-ca.pem',
-            PDO::MYSQL_ATTR_SSL_CERT    => '/cert/b3c72262693d13-cert.pem',
-            PDO::MYSQL_ATTR_SSL_KEY     => '/cert/b3c72262693d13-key.pem'
+            PDO::MYSQL_ATTR_SSL_CA      => base_path('/cert/cleardb-ca.pem'),
+            PDO::MYSQL_ATTR_SSL_CERT    => base_path('/cert/b3c72262693d13-cert.pem'),
+            PDO::MYSQL_ATTR_SSL_KEY     => base_path('/cert/b3c72262693d13-key.pem')
         ),
 			'strict'    => false,
 			'engine'	=> null,
