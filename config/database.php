@@ -84,11 +84,11 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 			'sslmode' => env('DB_SSLMODE', 'prefer'),
-			/*'options'   => array(
-            PDO::MYSQL_ATTR_SSL_CA      => __DIR__.'/cert/cleardb-ca.pem',
-            PDO::MYSQL_ATTR_SSL_CERT    => __DIR__.'/cert/b3c72262693d13-cert.pem',
-            PDO::MYSQL_ATTR_SSL_KEY     => __DIR__.'/cert/b3c72262693d13-key.pem',
-        ),*/
+			'options'   => array(
+            PDO::MYSQL_ATTR_SSL_CA      => '\storage\app\cert\cleardb-ca.pem',
+            PDO::MYSQL_ATTR_SSL_CERT    => '\storage\app\cert\b3c72262693d13-cert.pem',
+            PDO::MYSQL_ATTR_SSL_KEY     => '\storage\app\cert\b3c72262693d13-key.pem',
+        ),
 			'strict'    => false,
 			'engine'	=> null,
 		),

@@ -46,6 +46,7 @@ Route::post('prof-login', 'ProfessionalController@doLogin');
 
 Route::get('state', 'ProfessionalController@getState');
 
+
 Route::get('logout', 'ProfessionalController@doLogout');
 
 

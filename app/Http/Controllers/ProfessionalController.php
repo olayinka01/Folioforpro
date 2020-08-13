@@ -40,7 +40,7 @@ class ProfessionalController extends Controller {
 		$this->beforeFilter('csrf', array('except' => 'index'));
 	}*/
 	
-	public function showHello()
+	/*public function showHello()
 	{
 		
 		$user=new User();
@@ -53,7 +53,7 @@ class ProfessionalController extends Controller {
 	   
 	   $user->save();
 		return view('welcome');
-	}
+	}*/
 	public function showRegister()
 	{
 		$country = DB::table('country')->lists('country','country_id');
@@ -66,9 +66,9 @@ class ProfessionalController extends Controller {
 		
 	}
 	
-	public function getState($country_id)
+	public function getState()
 	{
-		//$country_id = Input::get('country_id');
+		$country_id = Input::get('country_id');
 		$resultset = DB::table('state')->where('country_id', '=', $country_id)->get();
 		
 		return $resultset;
